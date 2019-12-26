@@ -28,12 +28,12 @@ const styles = StyleSheet.create({
   },
 });
 
-const Header = () => (
+const Header = ({ name, role }) => (
   <View style={styles.header}>
-    <Image style={styles.image} src="https://scontent.fgyn2-1.fna.fbcdn.net/v/t1.0-9/p960x960/41770554_525884281180748_1067875285220720640_o.jpg?_nc_cat=103&_nc_ohc=P5liZoFv5kMAQk-KvbWYd54T7OL5CR4iOzKffinKoiAphseadNVu3O1qA&_nc_ht=scontent.fgyn2-1.fna&oh=9063ed2ecf960d10f2705575189c95e2&oe=5E70C622" />
+    <Image style={styles.image} src="https://i.imgur.com/BeIw4Wo.jpg" />
     <View style={styles.headerDescription}>
-      <Text style={styles.name}>Maxwel Coelho</Text>
-      <Text style={styles.role}>Javascript Web Developer</Text>
+      <Text style={styles.name}>{ name }</Text>
+      <Text style={styles.role}>{ role }</Text>
     </View>
   </View>
 );
